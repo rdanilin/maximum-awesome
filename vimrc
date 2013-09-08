@@ -112,3 +112,21 @@ if filereadable(expand("~/.vimrc.local"))
   " noremap! jj <ESC>
   source ~/.vimrc.local
 endif
+
+" Solorized
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized
+" Tags supportse
+" set autochdir
+set tags=.tags,./.tags;/Users/rdanilin/.tags
+set complete=.,w,b,u,t,i
+
+" let g:airline_powerline_fonts = 1
+let g:airline_theme='wombat'
+set laststatus=2
+set path=$PWD/**
+
+set guifont=Menlo:h12
+" enable search highlight
+set hls is
